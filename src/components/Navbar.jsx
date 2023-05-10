@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from 'react-icons/ai'
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false)
+  const [nav, setNav] = useState(true)
 
   const handleNav = () => {
     setNav(!nav)
@@ -18,7 +18,7 @@ const Navbar = () => {
         <li class='p-3'>About</li>
         <li class='p-3'>Contact</li>
       </ul>
-      <div className='md:hidden' onClick={handleNav}>
+      <div className='fixed right-4 md:hidden' onClick={handleNav}>
         {!nav ? (
           <AiOutlineMenuFold size={30} />
         ) : (
