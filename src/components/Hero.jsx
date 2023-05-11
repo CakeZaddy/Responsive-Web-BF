@@ -1,6 +1,7 @@
 import React from 'react'
 // import Typed from 'react-typed'
-import ReactTyped from 'react-typed'
+// import ReactTyped from 'react-typed'
+import Typist from 'react-typist'
 
 const Hero = () => {
   return (
@@ -16,7 +17,7 @@ const Hero = () => {
           <p className='text-xl sm:text-4xl md:text-5xl font-bold py-4'>
             Fast, flexible financing for
           </p>
-          <ReactTyped
+          <Typist
             className='text-xl sm:text-4xl md:text-5xl font-bold pl-2 md:pl-4 text-gray-300'
             strings={[' BTB', ' BTC', ' SASS']}
             typeSpeed={120}
